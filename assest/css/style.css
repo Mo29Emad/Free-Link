@@ -1,78 +1,65 @@
 body {
     
     font-family: 'Cairo', sans-serif;
-    overflow-x: hidden;
 }
 
-/* Start Navbar */
+/* Start navbar */
 
-
-
-.navbar .navbar-brand img {
+.our-navbar {
     
+    background: #F8F9FA;
+    padding: 10px 20px 10px 40px
+}
+
+.our-navbar .right {
+    
+    background: url('../imgs/logo2.png') center center;
+    background-size: cover;
     width: 190px;
-    height: 100%;
-}
-
-.navbar .nav-link {
-    
-    font-size: 18px;
+    height: 80px;
+    display: inline-block;
     
 }
 
-.navbar .btn-primary {
+.our-navbar .left {
     
-    padding: 5px 10px;
-    font-size: 17px;
-    font-weight: 500
+    float: left;
+    color: #3AADE6;
+    line-height: 100px
 }
 
-.navbar i {
-    
-    margin-left: 5px
-}
-
-
-/* End Navbar */
+/* End navbar */
 
 /* Start Header */
 
+.header {
+    
+    background: url("../imgs/header-side.jpg") left top no-repeat;
+    background-size: contain;
+}
+
 .header .right {
     
-    background: url("../imgs/header.jpg") center center;
+    padding-top: 50px;
+}
+
+.header .right div {
+    
+    background: url("../imgs/header.jpg") center center no-repeat;
     height: 480px;
-    width: 400px;
-    background-size: 400px 480px;
+    width: 590px;
+    background-size: 490px 480px;
 }
 
-.header .left {
+.header h1 {
     
-    background: url("../imgs/header-side.jpg") center center no-repeat;
-    height: 510px;
-    width: 500px;
-    background-size: 500px 510px;
-    position: relative;
-}
-
-.header .left h1 {
-    
-    white-space: nowrap;
-    position: absolute;
-    left: 70px;
-    top: 150px;
     font-weight: bold;
-    line-height: 1.6
-}
-
-.header .left button {
-    
-    position: absolute;
-    left: 570px;
-    top: 290px;
-    padding: 4px 10px;
+    line-height: 1.6;
+    margin-top: 140px
 }
 
 /* End Header */
+
 
 /* Start ABOUT-US */
 
@@ -259,13 +246,6 @@ body {
     
 }
 
-.testmonials .test-items {
-    
-    background: url('../imgs/testmonials/customer-say.jpg') center center no-repeat;
-    background-size: cover;
-    min-height: 900px
-}
-
 .testmonials h2 {
     
     display: inline-block;
@@ -275,40 +255,41 @@ body {
    
 }
 
-.testmonials .row {
-    
-    margin-bottom: 40px
-}
-
 .testmonials .card {
     
-    padding: 20px
+    min-width: 420px;
+    border-radius: 7%;
+    margin-bottom: 60px;
+    box-shadow: 5px 5px 14px 0 #888
 }
 
-.testmonials img {
+.testmonials .card .card-text {
     
-    width: 100px;
-    height: 100px;
-    border: 3px solid #723881
+    font-weight: 300;
+    font-size: 20px;
+    color: #090909
 }
 
-.testmonials h3 {
+.testmonials .card .card-body div {
     
-    margin-top: -25px;
-    margin-bottom: 20px
+    display: inline-block;
 }
 
-.testmonials p {
+.testmonials .card .card-body div:last-of-type {
     
-    font-size: 14px;
-    line-height: 1.8;
-    color: #1C1E21;
-    margin-bottom: 0
+    line-height: 60px
 }
 
-.testmonials .big-gap {
+.testmonials .card .card-body i {
     
-    margin-bottom: 40px
+    font-size: 21px
+}
+
+.testmonials .card .card-body button {
+    
+    padding: 7px 25px;
+    font-size: 18px;
+    margin-bottom: 10px
 }
 
 .testmonials button {
@@ -331,9 +312,7 @@ body {
     color: #2980b9
 }
 
-
 /* End Testmonials */
-
 
 /* Start Our-client */
 
@@ -397,7 +376,7 @@ body {
     background: url('../imgs/footer.jpg') bottom;
     background-size: cover;
     height: 455px;
-    padding: 80px 30px 80px 0;
+    padding: 135px 30px 80px 0;
     color: #FFF
 }
 
@@ -427,7 +406,9 @@ body {
 .footer .left p {
     
     width: 82%;
-    margin-bottom: 30px
+    margin-bottom: 30px;
+    font-size: 25px;
+    color: #ddd8d8
 }
 
 .footer .left li {
